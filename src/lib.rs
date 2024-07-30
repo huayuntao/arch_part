@@ -1,4 +1,5 @@
 #![allow(unused)]
+#![no_std]
 #![feature(asm_const)]
 pub mod ras;
 pub mod timer;
