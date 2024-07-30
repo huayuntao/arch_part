@@ -1,4 +1,5 @@
 // Sizes
+#![no_std]
 pub const MEMORY_SIZE: usize = 0x1000_0000;
 pub const USER_STACK_SIZE: usize = PAGE_SIZE * 40;
 pub const USER_HEAP_SIZE: usize = PAGE_SIZE * 20;

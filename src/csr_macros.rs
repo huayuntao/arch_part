@@ -1,3 +1,4 @@
+#![no_std]
 #[macro_export]
 macro_rules! impl_read_csr {
     ($csr_number:literal,$csr_ident:ident) => {
