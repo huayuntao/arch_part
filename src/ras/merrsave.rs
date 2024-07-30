@@ -1,4 +1,6 @@
-use crate::*;
+use crate::impl_read_csr;
+use crate::impl_write_csr;
+use crate::impl_define_csr;
 impl_define_csr!(MErrSave, "Machine Error Exception Data Save Register\n\
                             This register is used to store data temporarily for the system software.\n\
                             Each dava save register can hold the data of one general-purpose register.\n\

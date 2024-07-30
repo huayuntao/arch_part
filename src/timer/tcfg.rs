@@ -1,5 +1,7 @@
 use core::fmt::Debug;
-use crate::*;
+use crate::impl_read_csr;
+use crate::impl_write_csr;
+use crate::impl_define_csr;
 
 
 use bit_field::BitField;

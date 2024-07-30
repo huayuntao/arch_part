@@ -1,4 +1,6 @@
-use crate::*;
+use crate::impl_read_csr;
+use crate::impl_write_csr;
+use crate::impl_define_csr;
 
 impl_define_csr!(
     TId,

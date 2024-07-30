@@ -1,6 +1,8 @@
 use crate::config::PALEN;
 use bit_field::BitField;
-use crate::*;
+use crate::impl_read_csr;
+use crate::impl_write_csr;
+use crate::impl_define_csr;
 impl_define_csr!(MErrEntry,"Machine Error Exception Entry Base Address (MERRENTRY)\n\
                             This register is used to configure the entry base address of the machine error exception.\n\
                             Since the processor core enters the direct address translation mode once the machine error exception is triggered,\n\

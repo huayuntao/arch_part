@@ -1,4 +1,6 @@
-use crate::*;
+use crate::impl_read_csr;
+use crate::impl_write_csr;
+use crate::impl_define_csr;
 impl_define_csr!(MErrEra,"Machine Error Exception Data Save Register\n\
                           This register is used to record the PC of the instruction that triggered the machine error exception.");
 impl_read_csr!(0x94, MErrEra);

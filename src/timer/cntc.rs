@@ -1,5 +1,7 @@
 use bit_field::BitField;
-use crate::*;
+use crate::impl_read_csr;
+use crate::impl_write_csr;
+use crate::impl_define_csr;
 impl_define_csr!(CntC, "Counter Compensation, \n\
                         This register can be configured by the software to correct the timer’s readout value.\n\
                         The final readout value will be the original `timer_count_val` + `timer_compensation`.\n\

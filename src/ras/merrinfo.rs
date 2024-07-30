@@ -1,4 +1,6 @@
-use crate::*;
+use crate::impl_read_csr;
+use crate::impl_write_csr;
+use crate::impl_define_csr;
 impl_define_csr!(MErrInfo1,"Machine Error Information 1\n\
                             When a machine error exception is triggered, \n\
                             the hardware will store more information related to that error into these two registers for system software diagnostic purposes.\n\
